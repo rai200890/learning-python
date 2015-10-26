@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolSet name="Code Checking">
+  <tool name="Flake8" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="venv/bin/flake8" />
+      <option name="PARAMETERS" value="--max-line-length=119 --exclude=venv,test,migrations $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+    <filter>
+      <option name="NAME" value="Filter 1" />
+      <option name="DESCRIPTION" />
+      <option name="REGEXP" value="$FILE_PATH$\:$LINE$\:$COLUMN$\:.*" />
+    </filter>
+    <filter>
+      <option name="NAME" value="Filter 2" />
+      <option name="DESCRIPTION" />
+      <option name="REGEXP" value="$FILE_PATH$\:$LINE$\:.*" />
+    </filter>
+  </tool>
+</toolSet>
